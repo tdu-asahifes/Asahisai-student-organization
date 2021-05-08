@@ -10161,6 +10161,15 @@ header.masthead {
 
 }  */
 
+/* Access　Area */
+.left p{
+  color: white;
+}
+.right iframe{
+  border-radius: 5%;
+}
+
+
 
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
