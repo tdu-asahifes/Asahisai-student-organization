@@ -6272,6 +6272,16 @@ button.bg-dark:focus {
   border-radius: 50% !important;
 }
 
+.rounded-square {
+  border-radius: 25% !important;
+}
+
+.rounded-square:hover {
+  /* color: yellow; */
+  fill: yellow;
+}
+
+
 .rounded-pill {
   border-radius: 50rem !important;
 }
@@ -10126,6 +10136,10 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+.masthead-subheading , .masthead-heading{
+  text-shadow: 5px 3px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
+  color: #fff;
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
@@ -10415,9 +10429,25 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
+  /* color: yellow; */
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.team-member svg{
+  
+  
+  /* background: #fff; */
+  /* color: #000; */
+  /* filter: invert(50%) sepia(0%) saturate(11%) hue-rotate(143deg) brightness(101%) contrast(93%); */
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.twitterP{
+  box-shadow: none;
+  color: black;
 }
 .team-member h4 {
   margin-top: 1.5rem;
