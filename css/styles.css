@@ -10149,7 +10149,10 @@ header.masthead {
 
 /* primaryボタンに影をつける。 */
 .btn-primary{
-  animation: test 3s linear forwards;
+  animation: test 2s linear;
+}
+.btn-primary:hover{
+  animation: test2 3s linear forwards;
 }
 @keyframes test {
   50% {
@@ -10161,6 +10164,21 @@ header.masthead {
     text-shadow: 10px 5px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
     color: #fff;  }
 }
+@keyframes test2 {
+  0% {
+    text-shadow: 0px 0px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
+    color: #fff;  }
+
+  50% {
+    text-shadow: 2px 1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
+    color: #fff;
+  
+  }
+  100% {
+    text-shadow: 10px 5px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
+    color: #fff;  }
+}
+
 /* .btn-primary:hover{
   text-shadow: 5px 1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,-1px -1px 0 #000;
   color: #fff;
@@ -10180,6 +10198,10 @@ header.masthead {
 .left , .right{
   width: 100%;
   /* text-align: center; */
+}
+
+#sns{
+  background-color: #fff;
 }
 
 
@@ -10526,6 +10548,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
+
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
