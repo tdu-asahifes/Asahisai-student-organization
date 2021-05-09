@@ -100,11 +100,11 @@ abbr[data-original-title] {
           text-decoration-skip-ink: none;
 }
 
-address {
+/* address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit;
-}
+} */
 
 ol,
 ul,
@@ -10168,25 +10168,50 @@ header.masthead {
 }  */
 
 /* Access　Area */
-.left h4{
+.left{
+  margin: 0 auto;
+}
+ul.address{
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 2rem 2rem 0rem 2rem;
+  /* width: 100%; */
   color: white;
+  /* padding-bottom: 1.5rem; */
+}
+/* .left ul{
   padding-left: 20%;
+  width: 100%;
+  text-align: center;
+} */
+.right{
+  padding: 2rem;
 }
 .right iframe{
+  /* text-align: center; */
+  width: 100%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
   border-radius: 5%;
-  width: 80%;
   height: 400px;
+}
+
+.contact1{
+  width: 100%;
 }
 .left , .right{
   width: 100%;
   /* text-align: center; */
 }
+p.help-block{
+  padding-bottom: 2rem;
+}
 
 
 @media (max-width: 1230px){
-  .left , .right{
+  /* .left , .right{
     width: 50%;
-  }
+  } */
   .right iframe{
     width: 400px;
     height: 400px;
@@ -10194,6 +10219,12 @@ header.masthead {
   
 }
 
+@media (max-width: 1000px) {
+  .contact1{
+    width: 100%;
+    /* text-align: center; */
+  }
+}
 
 @media (max-width: 480px){
   .left , .right{

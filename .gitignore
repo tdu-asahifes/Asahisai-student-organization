@@ -1,1 +1,14 @@
 .DS_Store.DS_Store
+
+
+# 目的
+# .DS_Storeをリポジトリから削除しコミットしなくする
+
+# 方法
+# コミットされちゃってる.DS_Storeを消す
+# find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+# .DS_Storeがもうコミットされないようにする
+# echo .DS_Store >> .gitignore
+# コミットする
+# git add .gitignore
+# git commit -m 'Remove all .DS_Store'
