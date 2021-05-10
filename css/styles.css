@@ -177,6 +177,11 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+a .version{
+  color: black;
+  text-align: center !important;
+}
+
 pre,
 code,
 kbd,
